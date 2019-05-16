@@ -32,4 +32,4 @@ class HealthCheck(Resource):
 
     @staticmethod
     def get():
-        return jsonify({"status": "ok"})
+        return jsonify({"status": "ok", "message": "this is message from Flask"})
