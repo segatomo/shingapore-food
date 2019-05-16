@@ -1,7 +1,6 @@
 from flask import Flask, session, request, jsonify, make_response
 from flask_restplus import Api, Resource, fields
 from flask_cors import CORS
-from flask_session import Session
 import requests
 
 import json
