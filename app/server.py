@@ -7,10 +7,8 @@ import json
 import sys
 import os
 
-# from redis import Redis
-# app.config['SESSION_REDIS'] = Redis(host=app.config['REDIS_HOST'], port=app.config['REDIS_PORT'])
-# Session(app)
-
+from app.models.db_connector import DatabaseAccessor
+from app.models.users import Users
 
 args = sys.argv
 env = os.getenv("APP_ENV", "local")
@@ -25,10 +23,17 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 ns = api.namespace('api')
 
+db = DatabaseAccessor.get_session(app.config)
+
 
 @ns.route('/health')
 class HealthCheck(Resource):
 
     @staticmethod
     def get():
+        user = db.query(Users).filter_by(name="test").first()
+        if user:
+            print(user.id)
+            print(user.name)
+
         return jsonify({"status": "ok", "message": "this is message from Flask"})
