@@ -1,3 +1,4 @@
+# coding: utf-8
 from sqlalchemy import Column,  String, DateTime, Integer, FetchedValue
 from sqlalchemy.ext.declarative import declarative_base
 
