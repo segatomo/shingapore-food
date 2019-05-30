@@ -1,18 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-
-<form action="/upload" method="post" enctype="multipart/form-data">
-  <input type="file" name="image" accept="image/png, image/jpeg">
-  <button type="submit">submit</button>
-</form>
-
-{% if images %}
-  {% for path in images %}
-    <div>
-      <img src="images/{{ path }}" style="margin-top: 10px; vertical-align: bottom; width: 200px;">
-      {{ path }}
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+  <div class="container">
+  </div>
+</header>
+<div class="bg-image">
+  <div class="bg-mask">
+    <div class="container">
+    <big><big><big><big><big><big><big><big><h2>CockTailer</h2></big></big></big></big></big></big></big></big>
+    <div class="box3">
+      <h2>料理に合うお酒を提案します</h2>
+      <h3>画像をアップロードしてください</h3>
     </div>
-  {% endfor %}
-{% endif %}
+    <div class="semilong">
+    </div>
+    <form action="/upload" method="post" aligin="center" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/png, image/jpeg">
+      <button type="submit" class="btn-circle-3d" value="送信">送信</button>
+    </form>
+    <br><br><br><br><br><br>
+    </div>
+  </div>
+</div>
 
+<footer>
+  <h4 color="white">(c)copy right</h4>
+</footer>
 {% endblock %}
