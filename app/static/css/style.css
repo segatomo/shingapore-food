@@ -1,0 +1,192 @@
+@charset 'utf-8';
+
+h1 {
+  background: #A4C6FF; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
+  text-align: center;
+}
+
+div {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.container {
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    display: flex;
+    float: none;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+.bg-image {
+  background-image: url('https://www.yakei-kabegami.com/storage/m001808_k00028254_1024-768.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  height: 100%;
+}
+.bg-mask {
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  min-height: 100%;
+}
+
+.center{
+ text-align: center;
+}
+
+img.example1 {
+ width: 700px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+p { 
+  text-align: center;
+  color: white;
+}
+
+h2 { 
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+.box3 {
+    padding: 0.5em 1em;
+    margin: 1em 30em;
+    color: #2c2c2f;
+    background: #A4C6FF;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box18{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px white;
+    border-radius: 3px 0 3px 0;
+    background: 
+}
+.box18:before,.box18:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+.box18:after {
+    top:-12px;
+    left:-12px;
+}
+.box18:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box18 p {
+    margin: 0; 
+    padding: 0;
+    color: black;
+}
+
+.box18 h3 {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+
+button.btn-circle-3d {
+  display: inline-block;
+  text-decoration: none;
+  background: #A4C6FF;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #888888;
+  transition: .4s;
+}
+
+button.btn-circle-3d:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+header {
+  padding:20px;
+  background: linear-gradient(to right, rgb(1865, 186, 215), #A4C6FF);
+}
+
+footer{
+  width: 100%;
+  background: linear-gradient(to right, rgb(1865, 186, 215), #A4C6FF);
+  color: #fff;
+  text-align: center;
+  padding: 90px 0;
+  position: relative;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+  font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.box29 {
+    margin: 2em 0;
+    background: #A4C6FF;
+}
+.box29 .box-title {
+    font-size: 1.2em;
+    background: rgb(1865, 186, 215);
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box29 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.btn-flat-logo {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: #FFF;
+  background: #A4C6FF;
+  transition: .4s;
+}
+
+.btn-flat-logo:hover {
+  background: rgb(1865, 186, 215);
+}
+
+.semilong {
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+}
