@@ -55,6 +55,7 @@ def upload():
         print("save", save_path)
 
         return render_template('result.html',food=food, score=round(score,2), path=classify_path, alcohol=alcohol)
+
 @app.route('/login',methods=['GET','POST'])
 def login():
     if request.method=='POST':
